@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "computer-control": {
+      "command": "python",
+      "args": ["-m", "src.mcp_server"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  }
+}

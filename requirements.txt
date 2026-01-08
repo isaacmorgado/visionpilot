@@ -1,0 +1,38 @@
+# LLM Provider SDKs
+# ============================================================================
+# Anthropic SDK for Claude Computer Use API
+anthropic>=0.39.0
+
+# Google Gemini SDK (FREE tier available - recommended for cost savings)
+google-generativeai>=0.8.0
+
+# OpenAI SDK for GPT-4o and vision models
+openai>=1.0.0
+
+# HTTP client for Featherless.ai and other API providers
+requests>=2.31.0
+
+# MCP Server SDK for tool integration with Claude Code/Roo Code
+mcp>=1.0.0
+
+# Screen capture and GUI automation
+pyautogui>=0.9.54
+pillow>=10.0.0
+
+# Image processing and computer vision (optional, for advanced features)
+opencv-python>=4.8.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Async support
+aiofiles>=23.2.1
+
+# CLI interface
+click>=8.1.0
+
+# Rich console output
+rich>=13.0.0
+
+# Logging
+structlog>=24.0.0
