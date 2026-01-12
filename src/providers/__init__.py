@@ -13,10 +13,28 @@ from .base import (
     ProviderResponse,
     ProviderType,
 )
-from .anthropic_provider import AnthropicProvider
-from .gemini_provider import GeminiProvider
-from .openai_provider import OpenAIProvider
-from .featherless_provider import FeatherlessProvider
+
+# Conditional imports to avoid missing dependency errors
+try:
+    from .anthropic_provider import AnthropicProvider
+except ImportError:
+    AnthropicProvider = None
+
+try:
+    from .gemini_provider import GeminiProvider
+except ImportError:
+    GeminiProvider = None
+
+try:
+    from .openai_provider import OpenAIProvider
+except ImportError:
+    OpenAIProvider = None
+
+try:
+    from .featherless_provider import FeatherlessProvider
+except ImportError:
+    FeatherlessProvider = None
+
 from .factory import ProviderFactory, get_available_providers, create_provider
 
 __all__ = [
